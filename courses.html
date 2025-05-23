@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hot Beans Web - Courses</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Web Development Courses</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="developers.html">Developers</a>
+      <a href="jobs.html">Jobs</a>
+      <a href="apply.html">Apply</a>
+      <a href="courses.html"style="font-weight: bold;">Courses</a>
+    </nav>
+  </header>
+  <main>
+    <ul>
+      <li><a href="https://www.codecademy.com/learn">Codecademy</a></li>
+      <li><a href="https://freecodecamp.org">freeCodeCamp</a></li>
+      <li><a href="https://www.udemy.com/topic/web-development/">Udemy Web Development</a></li>
+    </ul>
+  </main>
+  <footer>
+    <p>&copy; 2025 Hot Beans Web</p>
+    <button id="darkToggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  </footer>
+  <script>
+    document.getElementById("darkToggle").addEventListener("click", function() {
+      document.body.classList.toggle("dark-mode");
+    });
+  </script>
+</body>
+</html>
