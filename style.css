@@ -41,13 +41,44 @@ body {
     flex-wrap: wrap;
     }
 
-  /* dark mode for middle */
   .dark-mode {
     background: #121212;
     color: #e0e0e0;
   }
 
-/* Dark mode for header and footer */
+
   .dark-mode header, .dark-mode footer {
     background: #1e1e1e;
   }
+.developer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px 20px;
+  justify-content: center;
+  align-items: start;
+  padding: 20px 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.developer-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.developer-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Dark mode for developer cards */
+body.dark-mode .developer-card {
+  background: #1e1e1e;
+  color: #e0e0e0;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
