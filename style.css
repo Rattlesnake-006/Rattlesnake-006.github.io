@@ -6,50 +6,50 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-  }
+}
   
-  header, footer {
+header, footer {
     background: #333;
     color: white;
     padding: 1em;
     text-align: center;
-  }
+}
   
-  nav a {
+nav a {
     margin: 0 10px;
     color: white;
     text-decoration: none;
-  }
+}
   
-  main {
+main {
     flex: 1;
     padding: 20px;
-  }
+}
   
-    form {
+form {
     display: flex;
     flex-direction: column;
     gap: 10px;
     max-width: 400px;
     margin: auto;
-    }
+}
   
-    footer {
+footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    }
+}
 
-  .dark-mode {
+.dark-mode {
     background: #121212;
     color: #e0e0e0;
-  }
+}
 
-
-  .dark-mode header, .dark-mode footer {
+.dark-mode header, .dark-mode footer {
     background: #1e1e1e;
-  }
+}
+
 .developer-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -76,9 +76,21 @@ body {
   border-radius: 10px;
 }
 
-/* Dark mode for developer cards */
+
 body.dark-mode .developer-card {
   background: #1e1e1e;
   color: #e0e0e0;
   box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .developer-grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (max-width: 480px) {
+  .developer-grid {
+    grid-template-columns: 1fr; 
+  }
 }
